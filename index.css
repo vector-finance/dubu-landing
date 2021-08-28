@@ -1,0 +1,180 @@
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+
+.landing-wrapper {
+  display: flex;
+  justify-content: center;
+  /* background: linear-gradient(#735858, #dae6f0); */
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.dubu-logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  left: 7.5%;
+  z-index: 2;
+}
+
+.dubu-logo-image {
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+.dubu-logo-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.landing-heading {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  left: 7.5%;
+  top: 25%;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
+  line-height: clamp(2rem, -0.875rem + 8.333vw, 3rem);
+  overflow: hidden;
+}
+
+.learn-more-content {
+  margin-top: 48px;
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.play-button-desktop {
+  background-color: #735858;
+  border-radius: 38px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 59px;
+}
+
+.play-button-desktop:hover {
+  background-color: #371110;
+}
+
+.play-button-desktop:active {
+  background-color: #2a0c0c;
+}
+
+.play-button-mobile {
+  display: none;
+}
+
+.landing-image-wrapper-desktop {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  right: 30%;
+}
+
+.landing-image-wrapper-mobile {
+  display: none;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  justify-content: center;
+  display: flex;
+  padding: 12px 0;
+}
+
+.landing-footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 2.5%;
+}
+
+.social-media-button {
+  margin-inline: 12px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-media-button:hover {
+  color: #371110;
+}
+
+@media screen and (max-width: 782px) {
+  .landing-heading {
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: clamp(5rem, -0.875rem + 8.333vw, 8rem);
+  }
+
+  .bsc-logo {
+    height: 20px;
+  }
+
+  .learn-more-content {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .play-button-desktop {
+    display: none;
+  }
+
+  .play-button-mobile {
+    display: block;
+    background-color: #735858;
+    border-radius: 38px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 59px;
+  }
+
+  .play-button-mobile:hover {
+    background-color: #371110;
+  }
+
+  .play-button-mobile:active {
+    background-color: #2a0c0c;
+  }
+
+  .landing-image-wrapper-desktop {
+    display: none;
+  }
+
+  .landing-image-wrapper-mobile {
+    display: block;
+  }
+
+  .landing-image {
+    width: 200px;
+  }
+}
